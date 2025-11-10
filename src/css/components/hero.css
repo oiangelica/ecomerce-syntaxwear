@@ -1,0 +1,66 @@
+.hero {
+    background: url(../../images/banners/hero-img.jpg) no-repeat center;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    border-radius: 20px;
+    top: 10px;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 12rem;
+}
+
+.hero-content {
+    color: var(--color-font-hero);
+    max-width: 360px;
+    text-align: center;
+}
+
+.hero-content .hero-title {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: 36px;
+    letter-spacing: 3px;
+}
+
+.hero-content .hero-subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    font-size: 1.9rem;
+    color: #ffffff;
+    width: 161px;
+    height: 48px;
+    font-weight: 400;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    transition: background-color 0.3s, color 0.3s ease-in-out;
+    line-height: 23px;
+}
+
+.btn-filled {
+    color: var(--active-color);
+    background-color: var(--background-padrao);
+}
+
+.btn:hover {
+    background-color: var(--active-color);
+    border: var(--active-color);
+    color: var(--color-font-hero);
+
+}

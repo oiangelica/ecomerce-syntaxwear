@@ -2,5 +2,7 @@
 
 :root{
     --fonte-principal: 'Ubuntu', sans-serif;
-    --background-padrao: #FFFFFF
+    --background-padrao: #FFFFFF;
+    --color-font-hero: #EDEDED;
+    --active-color:#6329A2
 }

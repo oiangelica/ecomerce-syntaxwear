@@ -1,8 +1,6 @@
-body{
-    background-color: black;
-}
+
 .header {
-    background-color: #FFFFFF;
+    background-color:var(--background-padrao);
     position: fixed;
     top: 20px;
     left: 50%;
@@ -13,7 +11,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 2rem;
+    padding: 1rem 2rem;
+    color: #333333;
 }
 .logo img {
     height: 48px;
@@ -30,7 +29,7 @@ body{
 }
 .nav-center a:hover, 
 .nav-right a:hover{
-    color: #7C3AED;
+    color:var(--active-color);
 }
 
 .nav-right ul {
