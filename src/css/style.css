@@ -4,3 +4,23 @@ body {
     margin: 0 3rem;
 }
 
+.btn {
+    font-size: 1.9rem;
+    color: #ffffff;
+    width: 161px;
+    height: 48px;
+    font-weight: 400;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    transition: background-color 0.3s, color 0.3s ease-in-out;
+    line-height: 23px;
+}
+
+.btn:hover {
+    background-color: var(--active-color);
+    border: var(--active-color);
+    color: var(--color-font-hero);
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.795);
+
+}
