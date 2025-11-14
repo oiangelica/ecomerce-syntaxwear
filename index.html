@@ -7,6 +7,14 @@
     <title>SyntaxWear - Tênis e Sneakers Online</title>
     <meta name="description"
         content="Compre os melhores tênis e sneakers online na SyntaxWear. Encontre modelos exclusivos, ofertas imperdíveis e frete grátis para todo o Brasil.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
+        integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/base.css">
     <link rel="stylesheet" href="./src/css/components/variables.css">
@@ -122,74 +130,107 @@
     </main>
 
     <!-- Rodapé com informações de contato e links -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <!-- Newsletter e Redes Sociais -->
-        <div class="footer-newsletter">
-            <form class="newsletter-form">
-                <input type="email" placeholder="Inscreva-se em nosso e-mail"
-                    aria-label="Email para inscrição na newsletter">
-                <button type="submit" aria-label="Enviar email"></button>
-            </form>
+        <div class="footer-content">
+            <div class="footer-newsletter-media">
+                <form class="newsletter-form">
+                    <label for="newsletter-email">Inscreva-se em nosso e-mail</label>
+                    <input type="email" placeholder="email@email.com" aria-label="Email para inscrição na newsletter"
+                        id="newsletter-email">
+                    <!-- <button type="submit" aria-label="Enviar email">Inscerverse</button> -->
+                </form>
 
-            <div class="social-media">
-                <p>Redes sociais</p>
-                <ul class="social-links">
-                    <li><a href="#" aria-label="Instagram"><img src="./src/images/icons/instagram.svg"
-                                alt="Instagram"></a></li>
-                    <li><a href="#" aria-label="Whatsapp"><img src="./src/images/icons/whatsapp.svg" alt="Whatsapp"></a>
-                    </li>
-                    <li><a href="#" aria-label="Tiktok"><img src="./src/images/icons/tiktok.svg" alt="Tiktok"></a></li>
-                    <li><a href="#" aria-label="Facebook"><img src="./src/images/icons/facebook.svg" alt="Facebook"></a>
-                    </li>
-                </ul>
+                <div class="social-media">
+                    <p>Redes sociais</p>
+                    <ul class="social-links">
+                        <li><a href="#" aria-label="Instagram" class="social-icons"> <i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#" aria-label="Whatsapp" class="social-icons"><i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+                        <li><a href="#" aria-label="Tiktok" class="social-icons"><i class="fa-brands fa-tiktok"></i></a>
+                        </li>
+                        <li><a href="#" aria-label="Facebook" class="social-icons"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
+            <!-- Navegação por Categorias -->
+            <nav class="footer-nav" aria-label="Navegação do rodapé">
+                <!-- Masculino -->
+                <ul class="category-list">
+                    <ul>
+                        <li>
+                            <h3>Masculino</h3>
+                        </li>
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Esporte</a></li>
+                        <li><a href="#">Moderno</a></li>
+                        <li><a href="#">Futurista</a></li>
+                    </ul>
+                </ul>
+
+                <!-- Feminino -->
+                <ul class="category-list">
+                    <ul>
+                        <li>
+                            <h3>Feminino</h3>
+                        </li>
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Esporte</a></li>
+                        <li><a href="#">Moderno</a></li>
+                        <li><a href="#">Futurista</a></li>
+                    </ul>
+                </ul>
+
+                <!-- Outlet -->
+                <ul class="category-list">
+                    <ul>
+                        <li>
+                            <h3>Outlet</h3>
+                        </li>
+                        <li><a href="#">Masculino</a></li>
+                        <li><a href="#">Feminino</a></li>
+                    </ul>
+                </ul>
+
+                <!-- Nossas Lojas -->
+                <ul class="category-list">
+                    <ul>
+                        <li>
+                            <h3>Nossas lojas</h3>
+                        </li>
+                        <li><a href="#">Loja física</a></li>
+                        <li><a href="#">Loja online</a></li>
+                    </ul>
+                </ul>
+
+                <!-- Sobre -->
+                <ul class="category-list">
+                    <ul>
+                        <li>
+                            <h3>Sobre</h3>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Missão</a></li>
+                        </li>
+                    </ul>
+                </ul>
+            </nav>
+
         </div>
 
-        <!-- Navegação por Categorias -->
-        <nav class="footer-nav" aria-label="Navegação do rodapé">
-            <!-- Masculino -->
-            <ul class="category-list">
-                <h3>Masculino</h3>
-                <li><a href="#">Casual</a></li>
-                <li><a href="#">Esporte</a></li>
-                <li><a href="#">Moderno</a></li>
-                <li><a href="#">Futurista</a></li>
-            </ul>
-
-            <!-- Feminino -->
-            <ul class="category-list">
-                <h3>Feminino</h3>
-                <li><a href="#">Casual</a></li>
-                <li><a href="#">Esporte</a></li>
-                <li><a href="#">Moderno</a></li>
-                <li><a href="#">Futurista</a></li>
-            </ul>
-
-            <!-- Outlet -->
-            <ul class="category-list">
-                <h3>Outlet</h3>
-                <li><a href="#">Masculino</a></li>
-                <li><a href="#">Feminino</a></li>
-            </ul>
-
-            <!-- Nossas Lojas -->
-            <ul class="category-list">
-                <h3>Nossas lojas</h3>
-                <li><a href="#">Loja física</a></li>
-                <li><a href="#">Loja online</a></li>
-            </ul>
-
-            <!-- Sobre -->
-            <ul class="category-list">
-                <h3>Sobre</h3>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Missão</a></li>
-            </ul>
-        </nav>
-
-        <!-- Copyright -->
         <div class="footer-copyright">
             <p>Copyright. All Rights Reserved</p>
+            <p class="copyright-code">
+                Coded by
+                <a href="https://github.com/oiangelica" target="_blank" rel="noopener noreferrer"
+                    class="copyright-link">
+                    <i class="fa-brands fa-github"></i>Angélica Coelho</a>
+            </p>
+            
         </div>
     </footer>
 

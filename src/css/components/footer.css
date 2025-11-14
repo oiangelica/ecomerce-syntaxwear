@@ -1,0 +1,121 @@
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 136rem;
+    margin: 0 auto;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-newsletter-media {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.newsletter-form input {
+    border-radius: 3rem;
+    padding: 1.2rem 2rem;
+    color: #AAAAAA;
+    width: 34rem;
+    border: none;
+}
+
+.social-media {
+    font-size: 2.4rem;
+}
+
+.social-media p {
+    padding-bottom: 1.6rem;
+}
+
+.social-media .social-links {
+    display: flex;
+    gap: 2rem;
+
+}
+
+ .social-icons {
+    border: 0.2rem solid #ffffff;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s, color 0.3s ease-in-out;
+}
+
+.social-icons:hover {
+    color: var(--active-color);
+    background-color: var(--color-font-hero);
+    box-shadow: 0.5rem 0.4rem 1rem rgba(255, 253, 253, 0.187);
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.category-list {
+    display: flex;
+    font-size: 2rem;
+
+}
+
+.category-list h3 {
+    font-size: 1.8rem;
+    color: var(--color-font-hero);
+}
+
+.category-list ul {
+    margin: 0 1.9rem;
+    max-width: 14.1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.footer-nav li a {
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-nav li a:hover {
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.footer-copyright { 
+    border-top: 0.1rem solid #ffffff;
+    max-width: 136rem;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.copyright-code { 
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.copyright-link {
+    color: #d6adfd;
+    transition: 0.3s ease-in-out;
+}
+
+.copyright-link:hover {
+    text-decoration: underline;
+    color: #d478f6;
+
+}
