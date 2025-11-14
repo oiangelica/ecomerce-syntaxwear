@@ -12,13 +12,13 @@ main {
 
 .btn {
     font-size: 1.9rem;
-    color: #ffffff;
+    color: var(--color-font-hero);
     width: 161px;
     height: 48px;
     font-weight: 400;
     border-radius: 30px;
     padding: 10px 20px;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--color-font-hero);
     transition: background-color 0.3s, color 0.3s ease-in-out;
     line-height: 23px;
 }
