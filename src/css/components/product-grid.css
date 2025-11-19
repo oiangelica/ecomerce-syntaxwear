@@ -24,7 +24,7 @@
 
 .midR {
     grid-area: midR;
-     background-image: url(../../images/products/moderno-grid.png);
+    background-image: url(../../images/products/moderno-grid.png);
 }
 
 .bottomL {
@@ -34,7 +34,7 @@
 
 .bottomR {
     grid-area: bottomR;
-     background-image: url(../../images/products/futurista-grid.png);
+    background-image: url(../../images/products/futurista-grid.png);
 }
 
 .grid-section {
@@ -47,27 +47,54 @@
     gap: 3rem;
 }
 
-.top1-content{
+.top1-content {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color:var(--color-font-hero);
+    color: var(--color-font-hero);
     text-align: center;
 }
 
-.card-title { 
+.card-title {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.card-subtitle { 
+.card-subtitle {
     font-size: 2.4rem;
     line-height: 32px;
     margin-bottom: 2rem;
 }
 
-.bottons-grid { 
+.bottons-grid {
     display: flex;
     gap: 10px;
+}
+
+@media (max-width: 1000px) {
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "top1 top1"
+            "top2 top2"
+            "midL midR"
+            "midL bottomR"
+            "bottomL bottomL";
+        max-width: 100%;
+        gap: 1rem;
+    }
+
+    .top1 {
+        min-height: 500px;
+    }
+
+    .midL {
+        min-height: 500px;
+    }
+
+    .top2,
+    .bottomL {
+        min-height: 200px;
+    }
 }
