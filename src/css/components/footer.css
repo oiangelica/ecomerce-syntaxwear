@@ -32,6 +32,9 @@
     border: none;
 }
 
+.newsletter-btn { 
+    margin-top: 1rem;
+}
 .social-media {
     font-size: 2.4rem;
 }
